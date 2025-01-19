@@ -1,2 +1,2 @@
 # A-S
-A catalog for Ayaz and Sons printing press and services
+Made for a client who owns a printing press

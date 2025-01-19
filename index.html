@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Ayaz & Sons Printing Services</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            
+            /* background-color: #c59a41; */
+            background-color: #023149;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
+        header .logo {
+            /* position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%); */
+        }
+
+        header .logo img {
+            /* height: 80px; */
+            width: 25%;
+            transition: 0.4s;
+        }
+
+        nav {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* footer {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        } */
+        footer {
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        footer .logo img {
+            width: 40px;
+        }
+
+        .carousel-item {
+            max-height: 450px;
+        }
+    </style>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("MainTitle").style.fontSize = "25px";
+                document.getElementById("MainSlogan").style.fontSize = "10px";
+                document.getElementById("MainLogo").style.width = "14%";
+            } else {
+                document.getElementById("MainTitle").style.fontSize = "50px";
+                document.getElementById("MainSlogan").style.fontSize = "25px";
+                document.getElementById("MainLogo").style.width = "25%";
+
+            }
+        }
+    </script>
+    <header id="header">
+        <div class="row">
+            <div class="logo col-lg-4">
+                <img id="MainLogo" src="assets\ayza and sons.svg"
+                    alt="Ayaz & Sons Logo">
+            </div>
+            <div class="col-lg-4">
+                <h1 id="MainTitle" style="font-size: 50px;transition: 0.4s;">AYAZ & SONS</h1>
+                <p id="MainSlogan" style="font-size: 25px;transition: 0.4s;">PRINTING SERVICES</p>
+            </div>
+            <div class="col-lg-4">
+                <nav id="MainMenu">
+                    <a href="#">About</a>
+                    <a href="#products">Services</a>
+                    <a href="#contact">Contact Us</a>
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+</head>
+
+<body>
+
+    <div id="about" style="margin-top: 160px;">
+        <div class="row" style="background-color: rgb(0, 0, 0);color: white;">
+            <marquee>
+                ~ For orders pleasae call or whatsapp us : <img
+                    src="assets\whatsapp.png" alt="Ayaz & Sons Logo"
+                    width="15px">0345-9752344 | 0316-5006361 ~
+                ~ For orders pleasae call or whatsapp us : <img
+                    src="assets\whatsapp.png" alt="Ayaz & Sons Logo"
+                    width="15px"> 0345-9752344 | 0316-5006361 ~
+                ~ For orders pleasae call or whatsapp us : <img
+                    src="assets\whatsapp.png" alt="Ayaz & Sons Logo"
+                    width="15px">0345-9752344 | 0316-5006361 ~
+            </marquee>
+        </div>
+        <!-- Carousel Section -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets\c6.jpg" class="d-block w-100"
+                        alt="Third Slide" style="height: 450px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\c5.jpg" class="d-block w-100"
+                        alt="Second Slide" style="height: 450px;">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets\c1.jpg" class="d-block w-100"
+                        alt="First Slide" style="height: 450px;">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+    <br>
+    <div id="products" style="min-height: 500px; text-align: center;">
+        <h3>Our Services</h3>
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\Business-Card.webp" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Visiting Cards</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\letterhead.webp" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Letter Pad</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\RFP-brochures.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Brochers Flyers</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\bill book.avif" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bill Book</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\stickers.webp" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Stickers</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\panaflex.avif" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Panaflex</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\file cover.jpeg" class="card-img-top"
+                        alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">File Cover</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\wedding cards.jpeg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Wedding Cards</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\stationary.jpg" class="card-img-top"
+                        alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">School/College Stationary</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\key chain.jpeg" class="card-img-top"
+                        alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Key Chain/Badge</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\Shirrts.jpeg" class="card-img-top"
+                        alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Shirts</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\student diary.jpeg" class="card-img-top"
+                        alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Diary</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\mug.jpeg" class="card-img-top"
+                        alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mug Printing</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\envelop.jpeg" class="card-img-top"
+                        alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Envelop</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\Resin.jpg" class="card-img-top"
+                        alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Resin Art</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\services\ceremic.webp" class="card-img-top"
+                        alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ceramic Art</h5>
+                            <p class="card-text">BUY NOW.</p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+    <footer id="contact">
+        <div class=row>
+            <div class="col-lg-4">
+                <img src="assets\card.jpeg" alt="Ayaz & Sons Logo"
+                    width="30%">
+            </div>
+            <div class="col-lg-4">
+                <div class="logo">
+                    <img src="assets\ayza and sons.svg"
+                        alt="Ayaz & Sons Logo">
+                </div>
+                <!-- <h5>AYAZ & SONS</h5>
+            <h6>PRINTING SERVICES</h6> -->
+                <span style="font-size: small;">
+                    "All rights reserved"
+                </span>
+            </div>
+            <div class="col-lg-4">
+                <img src="assets\whatsapp.png" alt="Ayaz & Sons Logo"
+                    width="15px">
+                <span>
+                    <a href="https://wa.me/whatsappphonenumber" target="_">
+                        "0345-9752344"
+                        </a>
+                </span>
+                <br>
+                <img src="assets\whatsapp.png" alt="Ayaz & Sons Logo"
+                    width="15px">
+                <span>
+                    <a href="https://wa.me/whatsappphonenumber" target="_">
+                        "0316-5006361"
+                        </a>
+                </span>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0"
+                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                            href="https://sprunkiphasez.com/">Sprunki Phase</a></div>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            width: 100%;
+                            height: 400px;
+                        }
+
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            width: 100%;
+                            height: 400px;
+                        }
+
+                        .gmap_iframe {
+                            width: 100% !important;
+                            height: 400px !important;
+                        }
+                    </style>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+
+</html>
